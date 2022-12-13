@@ -44,10 +44,8 @@ def convert_move_to_int(move: str) -> int:
     rock=1, paper=2, scissors=3
     """
 
-    try:
-        return {'A': 1, 'B': 2, 'C': 3}[move]
-    except KeyError: # For part 1
-        return {'X': 1, 'Y': 2, 'Z': 3}[move]
+    return {'A': 1, 'B': 2, 'C': 3,
+            'X': 1, 'Y': 2, 'Z': 3}[move]
 
 
 def get_score(opponent_move: int, friendly_move: int) -> int:
